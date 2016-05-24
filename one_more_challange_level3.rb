@@ -1,5 +1,5 @@
 start_array = [ "ab123", "gh00", "ijk8", "lmn12", "cd99ef11" ]
-@end_array = []
+$end_array = []
 
 def changer(arr)
    arr.each do |i|
@@ -10,7 +10,7 @@ def changer(arr)
        #puts w_of_string[0] + new_n.to_s
        
        n = i.gsub (/\d+/) {|x| x.to_i + 1}
-       @end_array << n
+       $end_array << n
    end
 end
 
@@ -29,7 +29,7 @@ def changer2(arr)
 		end
 		@end_array << new_string
 	end
-	puts @end_array
+	puts $end_array
 end
 
 changer(start_array)
